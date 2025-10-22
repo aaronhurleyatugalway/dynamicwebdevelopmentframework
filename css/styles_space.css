@@ -1,0 +1,188 @@
+body {
+    background: #0a0a2a; /* Deep space blue */
+    background-image: url('../images/spaceship.jpg'); /* Add the image path here */
+    background-size: cover; /* Ensure the image covers the entire background */
+    color: #00eaff; /* Neon cyan text */
+}
+
+h1 {
+    color: #fff; /* White text for headings */
+}
+
+input[type=text], select, input[type=number], input[type=password] {
+    background-color: #1a1a40; /* Dark purple-blue background */
+    color: #00eaff; /* Neon cyan text */
+    border: 1px solid #7f00ff; /* Purple glow border */
+}
+
+input[type=submit] {
+    background-color: #7f00ff; /* Futuristic purple button */
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    background-color: #00eaff; /* Neon cyan hover effect */
+    color: black;
+}
+
+#shoppingtable {
+    background-color: #1a1a40; /* Dark space grey */
+}
+
+th {
+    background-color: #000; /* Black header background */
+    color: #00eaff; /* Neon cyan text */
+    border: 1px solid #7f00ff;
+}
+
+.custom-header {
+    background-color: #000;
+}
+
+tr {
+    background-color: #222244; /* Slightly lighter space grey */
+}
+
+tr:nth-child(even) {
+    background-color: #1a1a40; /* Even rows darker */
+}
+
+.shoptr {
+    background-color: #1a1a40;
+}
+
+td {
+    background-color: #222244;
+    border: 1px solid #7f00ff;
+}
+
+.box, .box5, .box3, .box3a, .box4 {
+    background-color: #1a1a40;
+}
+
+.box2 {
+    color: #00eaff;
+    background-color: #000;
+}
+
+.button2 {
+    color: black;
+    background-color: #00eaff;
+}
+
+.button2:hover {
+    background-color: #7f00ff;
+    color: white;
+}
+
+.button3 {
+    color: white;
+    background-color: #7f00ff;
+}
+
+.button3:hover {
+    background-color: #00eaff;
+    color: black;
+}
+
+.div-border {
+    border: 2.5px solid #00eaff;
+    background-color: #1a1a40;
+}
+
+.div-border2 {
+    border: 2.5px solid #7f00ff;
+    background-color: #000;
+}
+
+.custom-hr {
+    background-color: #00eaff;
+}
+
+#login_modal, #checkoutform_modal, #image_modal, #theft_modal, #theft_report_form, #theft_report_response {
+    background: #1a1a40;
+    border: 2px solid #00eaff;
+}
+
+#colour_settings_modal {
+    background: #000;
+    border: #7f00ff 10px solid;
+}
+
+.close {
+    color: white;
+    background-color: #7f00ff;
+}
+
+.bottom-close {
+        color: white;
+    background-color: #7f00ff;
+}
+
+.close:hover, .close:focus {
+    background-color: #00eaff;
+}
+
+.image-grid div {
+    border: 1px solid #00eaff;
+}
+
+#form-cell {
+    border-right: 1px solid #7f00ff;
+}
+
+#sock_form {
+    border: 1px solid #00eaff;
+    background-color: #1a1a40;
+}
+
+.full-span {
+    background-color: #000;
+    color: #00eaff;
+}
+
+
+/* ============================
+   Text Color Adjustments
+   ============================ */
+
+/* Default body text */
+body, p, span, label, li, td, th, a, div {
+    color: #80d4ff; /* Light blue text instead of grey */
+}
+
+/* Optional: slightly lighter links on hover */
+a:hover {
+    color: #b3e5ff; /* Brighter blue when hovered */
+}
+
+/* Keep heading contrast strong */
+h1, h2, h3, h4, h5, h6 {
+    color: #00eaff; /* Keep neon cyan for headings */
+}
+
+.plusminus {
+    background-color: #1a1a2a;        /* Dark space metal base */
+    color: #00eaff;                    /* Neon cyan text */
+    border: 1px solid #00eaff;        /* Neon blue border */
+    border-radius: 6px;                /* Slightly rounded */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 0 8px #00eaff, 0 0 16px #00eaff; /* Neon glow effect */
+}
+
+.plusminus:hover {
+    background-color: #0a0a2a;        /* Darker space background on hover */
+    color: #fff;                       /* White text on hover for contrast */
+    border-color: #00ffff;             /* Brighter neon cyan */
+    box-shadow: 0 0 12px #00ffff, 0 0 24px #00ffff; /* Intensified glow */
+}
+
+.plusminus:active {
+    transform: scale(0.95);           /* Press effect */
+    box-shadow: 0 0 6px #00eaff, 0 0 12px #00eaff; /* Slightly dim glow when pressed */
+}

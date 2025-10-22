@@ -1,0 +1,158 @@
+body {
+    background: #ffeaff; /* Soft pink base */
+    background-image: url('../images/crazybunny.jpg'); /* Fluffy bunny background */
+    background-size: cover;
+    color: #ff99cc; /* Pastel pink text */
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute playful font */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ff66b2; /* Brighter pink for headings */
+    text-shadow: 1px 1px 2px #ffffff; /* Soft glow */
+}
+
+input[type=text], select, input[type=number], input[type=password] {
+    background-color: #fff0f5; /* Lavender blush background */
+    color: #ff66cc; /* Pastel pink text */
+    border: 2px solid #ff99cc;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+input[type=submit] {
+    background-color: #ffb3d9; /* Soft pink button */
+    color: #fff;
+    border: 2px solid #ff66cc;
+    border-radius: 12px;
+    padding: 6px 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: #ff99cc;
+    color: #fff;
+}
+
+#shoppingtable, td, tr {
+    background-color: #fff0f5; /* Light lavender cells */
+    border: 1px solid #ffb3d9;
+    color: #ff66cc;
+}
+
+th, .custom-header {
+    background-color: #ffb3d9;
+    color: #fff;
+    border: 1px solid #ff66cc;
+}
+
+.box, .box2, .box3, .box3a, .box4, .box5 {
+    background-color: #ffe6f0;
+    color: #ff66cc;
+}
+
+.button2 {
+    color: #fff;
+    background-color: #ff99cc;
+}
+
+.button2:hover {
+    background-color: #ff66cc;
+}
+
+.button3 {
+    color: #fff;
+    background-color: #ff66cc;
+}
+
+.button3:hover {
+    background-color: #ff33aa;
+}
+
+.div-border {
+    border: 2px solid #ffb3d9;
+    background-color: #fff0f5;
+    border-radius: 12px;
+}
+
+.div-border2 {
+    border: 2px solid #ff66cc;
+    background-color: #ffe6f0;
+    border-radius: 12px;
+}
+
+.custom-hr {
+    background-color: #ff99cc;
+    height: 3px;
+    border-radius: 2px;
+}
+
+#login_modal, #checkoutform_modal, #image_modal, #theft_modal, #theft_report_form, #theft_report_response {
+    background: #fff0f5;
+    border: 2px solid #ffb3d9;
+    border-radius: 12px;
+    color: #ff66cc;
+}
+
+#colour_settings_modal {
+    background: #ffe6f0;
+    border: 2px solid #ff66cc;
+    color: #ff66cc;
+}
+
+.close {
+    color: #fff;
+    background-color: #ff66cc;
+    border-radius: 50%;
+    padding: 0 8px;
+}
+
+.close:hover, .close:focus {
+    background-color: #ff33aa;
+}
+
+.bottom-close {
+      color: #fff;
+    background-color: #ff66cc;
+    border-radius: 50%;
+    padding: 0 8px;
+}
+
+.image-grid div {
+    border: 1px solid #ffb3d9;
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.plusminus {
+    background-color: #ffe6f0;
+    color: #ff66cc;
+    border: 2px solid #ffb3d9;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 6px 14px;
+    cursor: pointer;
+    box-shadow: 0 0 5px #ffb3d9;
+    transition: all 0.2s ease-in-out;
+}
+
+.plusminus:hover {
+    background-color: #ffb3d9;
+    color: #fff;
+    box-shadow: 0 0 10px #ff66cc;
+}
+
+.plusminus:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #ff66cc;
+}
+
+/* Text adjustments for readability */
+body, p, span, label, li, td, th, a, div {
+    color: #ff66cc;
+}
+
+a:hover {
+    color: #ff33aa;
+}

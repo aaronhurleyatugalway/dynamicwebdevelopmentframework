@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#site {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #444;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+input[type="submit"],
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.plusminus {
+    background-color: #2b102c;
+    padding: 5px 5px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #218838;
+}
+
+.plusminus:hover {
+    background-color: #a741aa;
+}
+
+button.removeAll {
+    background-color: #dc3545;
+}
+
+button.removeAll:hover {
+    background-color: #c82333;
+}
+
+#shipping-same {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.icon-container i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.form-warning {
+    color: red;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+.col-50 {
+    flex: 1;
+}
+
+#checkout-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust spacing between billing and shipping */
+}
+
+#fieldset-billing,
+#fieldset-shipping {
+    width: 48%; /* Adjust width to fit side-by-side */
+}
+
+fieldset:not(#payment) label {
+    width: 150px; /* Adjust based on form layout */
+    text-align: left;
+    margin-left: 4ch;
+}
+
+fieldset#payment label {
+    width: 150px; /* Adjust based on form layout */
+    text-align: left;
+    margin-left: 16ch;
+}

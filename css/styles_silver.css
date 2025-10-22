@@ -1,0 +1,234 @@
+body {
+    background: linear-gradient(to right, #00bfff, #bebdbd); /* Blue and Silver */
+    color: #ffffff; /* Light gray text */
+}
+
+h1 {
+    color: #00bfff; /* Bright blue for headings */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle glowing effect */
+}
+
+input[type=text], select, input[type=number], input[type=password] {
+    border: 1px solid #00bfff; /* Blue border */
+    background-color: #2b2b2b; /* Darker input field */
+    color: white; /* White text */
+}
+
+input[type=submit] {
+    background-color: #00bfff; /* Bright blue for buttons */
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #00a3cc; /* Darker blue on hover */
+}
+
+.checkbox-label {
+    font-size: 22px;
+}
+
+#shoppingtable {
+    background-color: #2b2b2b; /* Darker gray for table */
+}
+
+table {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+th {
+    background-color: #00bfff; /* Blue header */
+    color: white;
+    border: 1px solid #fff;
+}
+
+.custom-header {
+    background-color: #00bfff; /* Blue custom header */
+}
+
+tr {
+    background-color: #333; /* Dark rows */
+}
+
+tr:nth-child(even) {
+    background-color: #2b2b2b; /* Slightly lighter rows */
+}
+
+.shoptr {
+    background-color: #2b2b2b; /* Darker background for shop rows */
+}
+
+td {
+    border: 1px solid #00bfff; /* Blue border for cells */
+    background-color: #444; /* Darker background for data cells */
+}
+
+
+.box {
+    background-color: #333;
+}
+
+.box5 {
+    background-color: #333;
+}
+
+.box3 {
+    background-color: #333;
+}
+
+.box3a {
+    background-color: #333;
+}
+
+.box4 {
+    background-color: #333;
+}
+
+.box2 {
+    color: #fff;
+    background-color: #00bfff; /* Blue background for box2 */
+}
+
+
+.button2 {
+    color: black;
+    background-color: #00bfff; /* Blue button */
+}
+
+.button2:hover {
+    background-color: #00a3cc; /* Darker blue on hover */
+    color: white;
+}
+
+.button3 {
+    color: white;
+    background-color: #00bfff; /* Blue background */
+}
+
+.button3:hover {
+    background-color: #00a3cc; /* Darker blue on hover */
+    color: white;
+}
+
+.div-border {
+    border: 0px; /* Blue border */
+    background-color: #444;
+}
+
+.div-border2 {
+    border: 2.5px solid #00bfff;
+    background-color: #333;
+}
+
+.custom-hr {
+    background-color: #00bfff; /* Blue line */
+}
+
+#backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#login_modal {
+    background: #444;
+    border: 2px solid #00bfff; /* Blue border */
+}
+
+#checkoutform_modal {
+    background: #444;
+    border: 2px solid #00bfff;
+}
+
+#image_modal {
+    background: #444;
+    border: 2px solid #00bfff;
+}
+
+#colour_settings_modal {
+    background: white;
+    border: #00bfff 10px solid; 
+  }
+
+
+#theft_backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#theft_modal {
+    background: #444;
+    border: 2px solid #00bfff;
+}
+
+#theft_report_form {
+    background: #444;
+    border: 2px solid #00bfff;
+}
+
+#theft_report_response {
+    background: #444;
+    border: 2px solid #00bfff;
+}
+
+.close {
+    color: white;
+    background-color: #00bfff; /* Blue button for close */
+}
+
+.close:hover,
+.close:focus {
+    background-color: #00a3cc; /* Darker blue on hover */
+}
+
+.bottom-close {
+  background-color: #0f88de; 
+}
+
+.image-grid div {
+    border: 1px solid #00bfff; /* Blue border */
+}
+
+
+#form-cell {
+    border-right: 1px solid #00bfff; /* Blue border */
+}
+
+#sock_form {
+    border: 1px solid #00bfff; /* Blue border */
+    background-color: #444;
+}
+
+.full-span {
+    background-color: #00bfff; /* Blue background */
+    color: white;
+}
+
+/* Fix unreadable text */
+td, th { color: #fff; }
+#login_modal, #checkoutform_modal, #image_modal,
+#theft_modal, #theft_report_form, #theft_report_response { color: #fff; }
+select, option { background-color: #2b2b2b; color: #fff; }
+.box2, .full-span { color: #000; } /* readable on blue backgrounds */
+
+
+.plusminus {
+    background-color: #00bfff;        /* Bright cyan-blue base */
+    color: white;                      /* White text */
+    border: 1px solid #00bfff;        /* Blue border */
+    border-radius: 6px;                /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 191, 255, 0.3); /* Soft glow */
+}
+
+.plusminus:hover {
+    background-color: #bebdbd;        /* Silver hover */
+    border-color: #bebdbd;
+    color: #000;                       /* Black text on silver hover */
+    box-shadow: 0 0 10px rgba(190, 189, 189, 0.7); /* Glow on hover */
+}
+
+.plusminus:active {
+    transform: scale(0.95);           /* Subtle press effect */
+}
+

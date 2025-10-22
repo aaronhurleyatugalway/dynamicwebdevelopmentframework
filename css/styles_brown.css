@@ -1,0 +1,137 @@
+body {
+    background: linear-gradient(to right, #d17c3b, #fbbd47); /* Brown and Orange */
+    color: #333;
+}
+
+h1 {
+    color: #8b4513; /* Dark Brown */
+}
+
+input[type=submit] {
+    background-color: #d17c3b; /* Brown */
+    color: white;
+}
+
+input[type=submit]:hover {
+    background-color: #fbbd47; /* Orange */
+}
+
+#shoppingtable {
+    background-color: #976820;
+}
+
+th {
+    background-color: #8b4513; /* Dark Brown */
+    color: white;
+}
+
+.custom-header {
+    background-color: #8b4513; /* Dark Brown */
+}
+
+.custom-header-blue {
+    background-color: #2c4bb1;
+}
+
+tr {
+    background-color: #f2f2f2cc;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey */
+}
+
+.shoptr {
+    background-color: #966321;
+}
+
+.box, .box5, .box3, .box3a, .box4 {
+    background-color: #fbbd47; /* Orange */
+}
+
+.box2 {
+    color: #ffffff;
+    background-color: #8b4513; /* Dark Brown */
+}
+
+.button2 {
+    color: white;
+    background-color: #007BFF;
+}
+
+.button2:hover {
+    background-color: #0056b3;
+}
+
+.button3 {
+    color: white;
+    background-color: #d17c3b; /* Brown */
+}
+
+.button3:hover {
+    background-color: #fbbd47; /* Orange */
+}
+
+.div-border {
+    border: 0px;
+    background-color: #fbbd47; /* Orange */
+}
+
+.div-border2 {
+    border: 2.5px solid #967721;
+    background-color: #8b4513; /* Dark Brown */
+}
+
+.custom-hr {
+    background-color: #8b4513; /* Dark Brown */
+}
+
+#login_modal, #checkoutform_modal, #image_modal, #colour_settings_modal, #theft_modal, #theft_report_form, #theft_report_response {
+    background: white;
+    border: #8b4513 10px solid;
+}
+
+.close {
+    color: white;
+    background-color: rgb(214, 134, 59);
+}
+
+.close:hover, .close:focus {
+    background-color: black;
+}
+
+.bottom-close {
+ background-color: rgb(214, 134, 59);
+}
+
+#sock_form {
+    background-color: #f9f9f9;
+}
+
+.full-span {
+    background-color: #d17c3b; /* Brown */
+    color: white;
+}
+
+.plusminus {
+    background-color: #8B4513;       /* Dark brown base */
+    color: white;                     /* White text */
+    border: 1px solid #8B4513;       /* Brown border */
+    border-radius: 6px;               /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(139, 69, 19, 0.3); /* Soft brown glow */
+}
+
+.plusminus:hover {
+    background-color: #FFA500;       /* Bright orange hover */
+    border-color: #FFA500;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.7); /* Orange glow */
+}
+
+.plusminus:active {
+    transform: scale(0.95);          /* Subtle press effect */
+}

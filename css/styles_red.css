@@ -1,0 +1,202 @@
+/* Color Styles */
+
+body {
+  background: linear-gradient(to right,  #eebfda, #eb5454);
+}
+
+
+/* Additional Form Color Styles */
+input[type=text], select, input[type=number], input[type=password] {
+  border: 1px solid #f30a0a; /* Light grey border */
+  background-color: #f8bbd0; /* Pastel Rose background */
+  color: #333; /* Dark text for readability */
+}
+
+input[type=submit] {
+  background-color: #e57373; /* Soft Red */
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #e57373; /* Soft Red */
+}
+
+.checkbox-label {
+  font-size: 22px; /* Adjust the text size */
+}
+
+
+#shoppingtable {
+  background-color: #e57373; /* Soft Red */
+}
+
+th {
+  background-color: #d32f2f; /* Dark Red */
+}
+
+.custom-header {
+background-color: #d32f2f; /* Dark Red */
+}
+
+.custom-header-blue {
+background-color: #c2185b; /* Rose Pink */
+}
+
+tr {
+background-color: #f8bbd0; /* Light Pink */
+}
+
+tr:nth-child(even) {
+  background-color: #f8bbd0; /* Light Pink for even rows */
+}
+
+.shoptr {
+background-color: #d32f2f; /* Dark Red */
+}
+
+.box {
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.box5 {
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.box3 {
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.box3a {
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.box4 {
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.box2 {
+background-color: #e57373; /* Soft Red */
+color: #ffffff;
+}
+
+.button2 {
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.button2:hover {
+background-color: #f06292; /* Rose Pink */
+}
+
+.button3 {
+background-color: #e57373; /* Soft Red */
+}
+
+.button3:hover {
+background-color: #d32f2f; /* Dark Red */
+}
+
+.div-border {
+border: 0px;
+background-color: #f8bbd0; /* Pastel Rose */
+}
+
+.div-border2 {
+border: 2.5px solid #e57373; /* Soft Red */
+background-color: #d32f2f; /* Dark Red */
+}
+
+.custom-hr {
+border: none;
+height: 5px;
+background-color: #e57373; /* Soft Red */
+}
+
+#backdrop {
+background: rgba(0,0,0,0.5);
+}
+
+#login_modal {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+#checkoutform_modal {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+#image_modal {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+#colour_settings_modal {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+#theft_backdrop {
+background: rgba(0,0,0,0.5);
+}
+
+#theft_modal {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+#theft_report_form {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+#theft_report_response {
+border: #e57373 10px solid; /* Soft Red */
+}
+
+.close {
+color: white;
+background-color: rgb(244, 61, 146); /* Rose Pink */
+}
+
+.close:hover,
+.close:focus {
+background-color: black;
+}
+
+.bottom-close {
+background-color: rgb(244, 61, 146);
+}
+
+.image-grid {
+gap: 10px; /* Spacing between images */
+}
+
+.image-grid div {
+border: 1px solid #ccc;
+}
+
+.full-span {
+background-color: #e57373; /* Soft Red */
+color: white; /* White text */
+}
+
+.plusminus {
+    background-color: #C0392B;        /* Deep red base */
+    color: white;                      /* White text */
+    border: 1px solid #C0392B;        /* Red border */
+    border-radius: 6px;                /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(192, 57, 43, 0.3); /* Soft red glow */
+}
+
+.plusminus:hover {
+    background-color: #FFC0CB;        /* Rose pastel hover */
+    border-color: #FFC0CB;
+    color: #000;                       /* Black text on pastel hover */
+    box-shadow: 0 0 10px rgba(255, 192, 203, 0.7); /* Rose glow on hover */
+}
+
+.plusminus:active {
+    transform: scale(0.95);           /* Subtle press effect */
+}
+
+
+

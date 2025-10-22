@@ -1,0 +1,142 @@
+input[type=submit] {
+  background-color: #66b32e; /* Green */
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #66b32e; /* Green */
+}
+
+#shoppingtable {
+  background-color: #1b5e20; /* Dark Green */
+}
+
+body {
+  background: linear-gradient(to right, #f0e68c, #ffffff, #f0e68c, #fffff0, #f0e68c); /* Gold */
+}
+
+th {
+  background-color: #228b22; /* Green */
+  color: white; /* White text color */
+}
+
+.bottom-close {
+  background-color: #66b32e; /* Green */
+}
+
+.close {
+  background-color: #66b32e; /* Green */
+}
+
+
+
+.custom-header {
+  background-color: #4caf50; /* Green */
+}
+
+.custom-header-blue {
+  background-color: #00796b; /* Greenish blue */
+}
+
+tr {
+  background-color: #f2f2f2cc;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.shoptr {
+  background-color: #1b5e20; /* Dark Green */
+}
+
+.box {
+  background-color: #b8b1ba; /* Light gray */
+}
+
+.box5 {
+  background-color: #b8b1ba; /* Light gray */
+}
+
+.box3 {
+  background-color: #b8b1ba; /* Light gray */
+}
+
+.box3a {
+  background-color: #b8b1ba; /* Light gray */
+}
+
+.box4 {
+  background-color: #b8b1ba; /* Light gray */
+}
+
+.box2 {
+  color: #ffffff;
+  background-color: #000000; /* Black */
+}
+
+.button2 {
+  color: white;
+  background-color: #ffb300; /* Gold */
+}
+
+.button2:hover {
+  background-color: #ffa000; /* Gold */
+}
+
+.button3 {
+  color: white;
+  background-color: #66b32e; /* Green */
+}
+
+.button3:hover {
+  background-color: #4caf50; /* Green */
+}
+
+.div-border {
+  border:0px; /* Dark Green */
+  background-color: #dcedc8; /* Light Green */
+}
+
+.div-border2 {
+  border: 2.5px solid #1b5e20; /* Dark Green */
+  background-color: #1b5e20; /* Dark Green */
+}
+
+.custom-hr {
+  background-color: #1b5e20; /* Green */
+}
+
+#login_modal,
+#checkoutform_modal,
+#image_modal,
+#colour_settings_modal,
+#theft_modal,
+#theft_report_form,
+#theft_report_response {
+  border: #1b5e20 10px solid; /* Dark Green */
+}
+
+.plusminus {
+    background-color: #228B22;        /* Deep green base */
+    color: white;                      /* White text */
+    border: 1px solid #228B22;        /* Green border */
+    border-radius: 6px;                /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(34, 139, 34, 0.3); /* Soft green glow */
+}
+
+.plusminus:hover {
+    background-color: #FFD700;        /* Gold hover */
+    border-color: #FFD700;
+    color: #000;                       /* Black text on gold hover */
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.7); /* Gold glow on hover */
+}
+
+.plusminus:active {
+    transform: scale(0.95);           /* Subtle press effect */
+}

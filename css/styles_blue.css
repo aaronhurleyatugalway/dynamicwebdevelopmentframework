@@ -1,0 +1,109 @@
+input[type=submit] {
+  background-color: #00aaff;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #00aaff;
+}
+
+#shoppingtable {
+  background-color: #005f87;
+}
+
+body {
+  background: linear-gradient(to right, #00bcd4, #ffffff, #00bcd4, #ffffff, #00bcd4);
+}
+
+th {
+  background-color: #007b8e;
+  color: white;
+}
+
+.custom-header {
+background-color: #21843d;
+}
+
+.custom-header-blue {
+background-color: #005f87;
+}
+
+.shoptr {
+background-color: #005f87;
+}
+
+.button2 {
+color: white;
+background-color: #007BFF;
+}
+.button2:hover {
+background-color: #0056b3;
+}
+
+.button3 {
+color: white;
+background-color: #00c1ff;
+}
+.button3:hover {
+background-color: #00b0d1;
+}
+
+.div-border {
+border: 0px;
+background-color: #80c7ff;
+}
+
+.div-border2 {
+border: 2.5px solid #005f87;
+background-color: #005f87;
+}
+
+.custom-hr {
+background-color: #005f87;
+}
+
+#login_modal, #checkoutform_modal, #image_modal, #colour_settings_modal, #theft_modal, #theft_report_form, #theft_report_response {
+border: #89bee9 10px solid;
+}
+
+.close {
+background-color: rgb(61, 75, 209);
+}
+
+.close:hover,
+.close:focus {
+background-color: black;
+}
+
+
+.bottom-close {
+  background-color: rgb(61, 75, 209);
+}
+
+.full-span {
+background-color: #00aaff;
+color: white;
+}
+
+.plusminus {
+    background-color: #00bfff;       /* Bright cyan base */
+    color: white;                    /* White text */
+    border: 1px solid #00bfff;       /* Blue border */
+    border-radius: 6px;              /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(0, 191, 255, 0.3); /* Soft glow */
+}
+
+.plusminus:hover {
+    background-color: #00a3cc;       /* Slightly darker on hover */
+    border-color: #00a3cc;
+    box-shadow: 0 0 10px rgba(0, 163, 204, 0.7); /* Brighter glow on hover */
+}
+
+.plusminus:active {
+    transform: scale(0.95);          /* Subtle press effect */
+}

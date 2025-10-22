@@ -1,0 +1,155 @@
+/* Color Styles */
+
+body {
+  background: linear-gradient(to right,  #eebfda, #ffffff, #e8bfee, #fffff0, #eebfda);
+}
+
+
+/* Input button */
+input[type=submit] {
+  background-color: #a74caf;
+  color: white;
+}
+
+input[type=submit]:hover {
+  background-color: #a74caf;
+}
+
+/* Table Header */
+th {
+  background-color: #c044de; 
+  color: white;
+}
+
+/* Custom Headers */
+.custom-header {
+background-color: #21843d; 
+}
+
+.custom-header-blue {
+background-color: #2c4bb1; 
+}
+
+/* Table Rows */
+tr {
+background-color: #f2f2f2cc;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+.shoptr {
+background-color: #3f2196;
+}
+
+/* Box Backgrounds */
+.box {
+background-color: #b8b1ba; /* Light gray background */
+}
+
+.box5 {
+background-color: #b8b1ba; /* Light gray background */
+}
+
+.box3 {
+background-color: #b8b1ba; /* Light gray background */
+}
+
+.box3a {
+background-color: #b8b1ba; /* Light gray background */
+}
+
+.box4 {
+background-color: #b8b1ba; /* Light gray background */
+}
+
+.box2 {
+color: #ffffff;
+background-color: #000000; /* Black background */
+}
+
+/* Button Colors */
+.button2 {
+background-color: #007BFF;
+}
+
+.button2:hover {
+background-color: #0056b3;
+}
+
+.button3 {
+background-color: #2cd638;
+}
+
+.button3:hover {
+background-color: #329f5c;
+}
+
+/* Border and Background Colors */
+.div-border {
+border: 0px;
+background-color: #b38dd9;
+}
+
+.div-border2 {
+border: 2.5px solid #3f2196;
+background-color: #3f2196;
+}
+
+.custom-hr {
+background-color: #3f2196;
+}
+
+/* Modal Borders */
+#login_modal, #checkoutform_modal, #image_modal, #colour_settings_modal, 
+#theft_modal, #theft_report_form, #theft_report_response {
+border: #D6A0EB 10px solid;
+}
+
+/* Close Button */
+.close {
+background-color: rgb(216, 61, 146);
+}
+
+.close:hover,
+.close:focus {
+background-color: black;
+}
+
+.bottom-close {
+  background-color: rgb(216, 61, 146);
+}
+
+
+
+#backdrop, #theft_backdrop {
+background: rgba(0, 0, 0, 0.5);
+}
+
+#sock_form {
+background-color: #f9f9f9;
+}
+
+.full-span {
+background-color: #6845d0;
+}
+
+.plusminus {
+    background-color: #7f00ff;        /* Deep purple base */
+    color: white;                      /* White text */
+    border: 1px solid #7f00ff;        /* Purple border */
+    border-radius: 6px;                /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(127, 0, 255, 0.3); /* Soft purple glow */
+}
+
+.plusminus:hover {
+    background-color: #c71585;        /* Bright pink hover */
+    border-color: #c71585;
+    box-shadow: 0 0 1
+}
