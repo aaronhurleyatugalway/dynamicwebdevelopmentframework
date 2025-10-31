@@ -35,6 +35,14 @@ include 'index_php/index_set_cookies.php'; // initialising colour theme and avat
     $_SESSION['cart'] = [];
   }
 
+  if (!isset($_SESSION['formFields'])) {
+    $_SESSION['formFields'] = [];
+}
+
+if (!isset($_SESSION['user_id'])) {
+    $_SESSION['user_id'] = 0;
+}
+
 
 
   $cart_info = countItemsAndPrice();

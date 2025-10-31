@@ -44,7 +44,7 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 select {
-    width: 50%;
+    width: 70%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -58,40 +58,6 @@ input[type="number"]:focus,
 select:focus {
     border-color: #007BFF;
     outline: none;
-}
-
-input[type="submit"],
-button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-right: 10px;
-}
-
-.plusminus {
-    background-color: #2b102c;
-    padding: 5px 5px;
-}
-
-input[type="submit"]:hover,
-button:hover {
-    background-color: #218838;
-}
-
-.plusminus:hover {
-    background-color: #a741aa;
-}
-
-button.removeAll {
-    background-color: #dc3545;
-}
-
-button.removeAll:hover {
-    background-color: #c82333;
 }
 
 #shipping-same {
@@ -110,10 +76,6 @@ button.removeAll:hover {
     display: inline-block;
 }
 
-.row {
-    display: flex;
-    gap: 10px;
-}
 
 .col-50 {
     flex: 1;
@@ -141,3 +103,70 @@ fieldset#payment label {
     text-align: left;
     margin-left: 16ch;
 }
+
+
+/* Checkout Button (same as before) */
+.checkout-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.checkout-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.checkout-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Clear Form Button */
+.clear-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.clear-btn:hover {
+    background-color: #d32f2f; /* Darker red */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.clear-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+
+#checkout_success_modal {
+  display: none;
+  position: fixed;
+  background: white;
+  padding: 10px;
+  width: 550px;
+  min-height:20vh;
+  top: 100px;
+  left: calc(50% - 140px);
+  z-index: 2;
+  text-align: center;
+  font-size: 20px;
+  border: #0d2bae 10px solid;
+}
+

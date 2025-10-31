@@ -173,7 +173,7 @@ td {
   top: 5%;           /* distance from top */
   left: 0;            /* attach to left edge */
   padding: 10px;
-  width: 650px;
+  width: 750px;
   min-height: 20vh;
   max-height: 60vh; /* Limits modal height */
   overflow-y: auto; /* Makes inner content scrollable */
@@ -343,3 +343,29 @@ span[onclick="showModalImages()"] {
     vertical-align: middle;
 }
 
+.plusminusred {
+    background-color: #C0392B;        /* Deep red base */
+    color: white;                      /* White text */
+    border: 1px solid #C0392B;        /* Red border */
+    border-radius: 6px;                /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 2px 6px rgba(192, 57, 43, 0.3); /* Soft red glow */
+}
+
+.plusminusred:hover {
+    background-color: #86051b;        /* Rose pastel hover */
+    border-color: #750719;
+    color: #fff;                       /* Black text on pastel hover */
+}
+
+.plusminusred:active {
+    transform: scale(0.95);           /* Subtle press effect */
+}
+
+.checkout-page .maybehide {
+    display: none;
+}

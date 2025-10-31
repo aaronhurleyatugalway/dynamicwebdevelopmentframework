@@ -3,15 +3,13 @@
   <!-- =============================== -->
   <div class="div-border" style="display: flex; justify-content: left; align-items: center; gap: 20px;">
 
-
-
     <!-- Main Image -->
     <img src="images/findyoursocks.jpg" width="245px">
 
     <!-- Avatar Section -->
     <span onclick="showModalImages()">
       <span id="avatarimage">
-        <img src="images/avatars/<?php echo $_COOKIE["selected_avatar"] ?>" title="Change Avatar" alt="Sock Thieves"
+        <img src="images/avatars/<?php echo $_COOKIE["selected_avatar"] ?? 'avatar0.jpg' ?>" title="Change Avatar" alt="Sock Thieves"
           width="110px">
       </span>
       <img src="images/avatarchoosesign.jpg" width="75px">
@@ -22,7 +20,7 @@
   <img 
     id="themeCatImg"
     onclick="showColourSettings()" 
-    src="images/colour_theme_cats/<?php echo htmlspecialchars($_COOKIE['theme'] ?? 'default'); ?>_cat.jpg" 
+    src="images/colour_theme_cats/<?php echo htmlspecialchars($_COOKIE['theme'] ?? 'purple'); ?>_cat.jpg" 
     title="Change Colour Settings" 
     alt="Sock Thieves"
     width="180px">
