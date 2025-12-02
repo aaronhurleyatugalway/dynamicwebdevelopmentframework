@@ -15,71 +15,89 @@
     $status = "available";
     $sock_colour = isset($_POST['sock_colours']) ? htmlspecialchars($_POST['sock_colours']) : '';
     $sock_pattern = isset($_POST['sock_patterns']) ? htmlspecialchars($_POST['sock_patterns']) : '';
-
-    $sizes_out = json_encode(isset($_POST['sizes']) ? $_POST['sizes'] : []);
-
-    $sizes = str_replace(array('[', ']'), '', $sizes_out);
+    $sizes = isset($_POST['sizes']) ? $_POST['sizes'] : [];
 
     include '../db_connect.php';
 
-    $opening_part = "Select m.sock_id, s.status, s.sock_color, s.image_url, s.sock_pattern, s.size, 
-m.merchandise_id, m.price, m.stock_quantity 
-FROM Merchandise m 
-JOIN Socks s ON m.sock_id = s.sock_id";
+    // ----- Build SQL -----
+    $sql = "SELECT 
+                m.sock_id, s.status, s.sock_color, s.image_url, 
+                s.sock_pattern, s.size, 
+                m.merchandise_id, m.price, m.stock_quantity
+            FROM Merchandise m
+            JOIN Socks s ON m.sock_id = s.sock_id";
 
-    $status_clause = "";
-    $colour_clause = "";
-    $pattern_clause = "";
-    $size_clause = "";
-    $extra = " WHERE";
+    $where_conditions = [];
+    $params = [];
+    $types = "";
 
-    if ($status) {
-        $status_clause = "$extra s.status='$status'";
-        $extra = " AND";
+    // Status
+    $where_conditions[] = "s.status = ?";
+    $params[] = $status;
+    $types .= "s";
+
+    // Colour
+    if (!empty($sock_colour)) {
+        $where_conditions[] = "s.sock_color = ?";
+        $params[] = $sock_colour;
+        $types .= "s";
     }
 
-    if ($sock_colour) {
-        $colour_clause = "$extra s.sock_color='$sock_colour'";
-        $extra = " AND";
+    // Pattern
+    if (!empty($sock_pattern)) {
+        $where_conditions[] = "LOWER(s.sock_pattern) LIKE ?";
+        $params[] = "%" . strtolower($sock_pattern) . "%";
+        $types .= "s";
     }
 
-    if ($sock_pattern) {
-        $pattern_clause = "$extra LOWER(s.sock_pattern) LIKE '%$sock_pattern%'";
-        $extra = " AND";
+    // Sizes
+    if (!empty($sizes)) {
+        $placeholders = implode(",", array_fill(0, count($sizes), "?"));
+        $where_conditions[] = "s.size IN ($placeholders)";
+        foreach ($sizes as $sz) {
+            $params[] = $sz;
+            $types .= "s";
+        }
     }
 
-    if ($sizes) {
-        $size_clause = "$extra s.size in ($sizes)";
+    if (!empty($where_conditions)) {
+        $sql .= " WHERE " . implode(" AND ", $where_conditions);
     }
 
-    $sql_statement = "$opening_part $status_clause$colour_clause$pattern_clause$size_clause";
-    $result = $conn->query($sql_statement);
-    $conn->close();
+    // ----- Prepare, bind, execute -----
+    $stmt = $conn->prepare($sql);
 
+    if (!empty($params)) {
+        $stmt->bind_param($types, ...$params);
+    }
 
-    $num_results = mysqli_num_rows($result);
+    $stmt->execute();
+    $result = $stmt->get_result();
+
+    $num_results = $result->num_rows;
 
     if ($num_results > 1) {
-        echo "<b><h3>There are " . mysqli_num_rows($result) . " Results</h3></b><br>";
+        echo "<b><h3>There are $num_results Results</h3></b><br>";
     } else {
         echo "<br>";
     }
 
     echo "<div class='sock-container div-border'>";
 
-    while ($row = mysqli_fetch_array($result)) {
+    while ($row = $result->fetch_assoc()) {
         echo "<div style='border: 1px solid #ccc; border-radius: 8px; padding: 16px; width: 150px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); background-color: white'>";
-        echo "<img src='images/" . $row['image_url'] . "' alt='" . $row['sock_color'] . " sock' style='width: 75%; height: auto; border-radius: 8px;'>";
-        echo "<h3 style='color: #333;'>" . $row['sock_color'] . " - " . $row['sock_pattern'] . "</h3>";
-        echo "<p style='margin: 8px 0; color: black;'>Size: " . $row['size'] . "</p>";
-        echo "<p style='margin: 8px 0; font-weight: bold; color: black;'>Price: €" . $row['price'] . "</p>";
-        echo "<button onclick='addtoCart(" . $row['sock_id'] . ")' style='padding: 10px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;'>
-    Add to Cart</button>";
+        echo "<img src='images/" . htmlspecialchars($row['image_url']) . "' alt='" . htmlspecialchars($row['sock_color']) . " sock' style='width: 75%; height: auto; border-radius: 8px;'>";
+        echo "<h3 style='color: #333;'>" . htmlspecialchars($row['sock_color']) . " - " . htmlspecialchars($row['sock_pattern']) . "</h3>";
+        echo "<p style='margin: 8px 0; color: black;'>Size: " . htmlspecialchars($row['size']) . "</p>";
+        echo "<p style='margin: 8px 0; font-weight: bold; color: black;'>Price: €" . htmlspecialchars($row['price']) . "</p>";
+        echo "<button onclick='addtoCart(" . htmlspecialchars($row['sock_id']) . ")' style='padding: 10px 16px; background-color: #007bff; color: white; border: none; border-radius: 4px; cursor: pointer;'>Add to Cart</button>";
         echo "</div>";
     }
 
     echo "</div>";
 
+    $stmt->close();
+    $conn->close();
 
     ?>
 
